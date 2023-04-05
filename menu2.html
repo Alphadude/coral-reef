@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-   
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md">
         <div class="container">
@@ -44,217 +56,68 @@
             </div>
         </div>
     </nav>
-
-    <!-- Restaurant Menu -->
-    <section id="menu" class="restaurant-menu menu section-padding bg-blck">
+    <!-- Restaurant Slider -->
+    <header class="header slider">
+        <div class="owl-carousel owl-theme">
+            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/restaurant/1.jpg"></div>
+            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/restaurant/3.jpg"></div>
+            <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/restaurant/2.jpg"></div>
+        </div>
+        <!-- arrow down -->
+        <div class="arrow bounce text-center">
+            <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+        </div>
+    </header>
+    <!-- Restaurant Content -->
+    <section class="rooms-page section-padding" data-scroll-index="1">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="section-subtitle"><span>Menue</span></div>
-                    <div class="section-title"><span>Continental Breakfast</span></div>
+                <div class="col-md-12 text-left"> 
+                    <span>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                    </span>
+                    <div class="section-subtitle">An Experience for the Senses</div>
+                    <div class="section-title">The Restaurant</div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="tabs-icon col-md-10 offset-md-1 text-center">
-                            <div class="owl-carousel owl-theme">
-                                <div id="tab-1" class="active item">
-                                    <h6>Soup</h6>
-                                </div>
-                                <div id="tab-2" class="item">
-                                    <h6>Rice</h6>
-                                </div>
-                                <div id="tab-3" class="item">
-                                    <h6>Chops</h6>
-                                </div>
-                                <div id="tab-4" class="item">
-                                    <h6>Porridges</h6>
-                                </div>
-                                <div id="tab-5" class="item">
-                                    <h6>Salads</h6>
-                                </div>
-                                <div id="tab-6" class="item">
-                                    <h6>Other meals</h6>
-                                </div>
+                    <p class="mb-30">Whether you are looking for a quick bite or a romantic dinner for two, our restaurant offers an inviting atmosphere that is perfect for any occasion. Our attentive staff is dedicated to ensuring that your dining experience is nothing short of perfect, with exceptional service that is tailored to meet your every need.
+
+                        We also offer a variety of dining options, including indoor and outdoor seating, room service, and private dining. Whatever your preference, we are here to make your dining experience a memorable one.</p>
+                    <h6>Hours</h6>
+                    <ul class="list-unstyled page-list mb-30">
+                        <li>
+                            <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                            <div class="page-list-text">
+                                <p>Breakfast: 7.00 am – 11.00 am (daily)</p>
                             </div>
-                        </div>
-                        <div class="restaurant-menu-content col-md-12">
-                            <!-- Starters -->
-                            <div id="tab-1-content" class="cont active">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Afang <span class="price"> &#8358; 3000</span></h5>
-                                            <p>Goat meat,Chicken,Beef / Fish</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Native <span class="price">&#8358; 5000</span></h5>
-                                            <p>Goat meat,Chicken,Beef / Fish</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Egusi <span class="price">&#8358; 4000</span></h5>
-                                            <p>choice of protein except fish</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Ogbono <span class="price">&#8358; 4000</span></h5>
-                                            <p>choice of protein except fish</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Bitterleaf <span class="price">&#8358; 4000</span></h5>
-                                            <p>choice of protein except fish</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Nsala <span class="price">&#8358; 5000</span></h5>
-                                            <p>Goatmeat, fish chicken etch</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        </li>
+                        <li>
+                            <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                            <div class="page-list-text">
+                                <p>Lunch: 12.00 noon – 2.00 pm (daily)</p>
                             </div>
-                            <!-- Mains -->
-                            <div id="tab-2-content" class="cont">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Jollof <span class="price">&#8358; 4000</span></h5>
-                                            <p>chicken, goatmeat, beef</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Fried rice <span class="price">&#8358; 4000</span></h5>
-                                            <p>chicken, goatmeat, beef</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Nature rice <span class="price">&#8358; 5000</span></h5>
-                                            <p>with choice of protien</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>White rice <span class="price">&#8358; 4500</span></h5>
-                                            <p>chicken curry</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        </li>
+                        <li>
+                            <div class="page-list-icon"> <span class="ti-time"></span> </div>
+                            <div class="page-list-text">
+                                <p>Dinner: open from 6.30 pm, last order at 10.00 pm (daily)</p>
                             </div>
-                            <!-- Salads -->
-                            <div id="tab-3-content" class="cont">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Pepper chicken <span class="price">&#8358; 3000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Pepper meat <span class="price">&#8358; 2500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Nkwobi <span class="price">&#8358; 1500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Isi-ewu / Goathead <span class="price">&#8358; 4500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>pepper gizzard <span class="price">&#8358; 2500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Club sandwich <span class="price">&#8358; 3000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Wine -->
-                            <div id="tab-4-content" class="cont">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Oat/custard with Bread<span class="price">&#8358; 2000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Tea/Bread <span class="price">&#8358; 1500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Fish pepper soup <span class="price">&#8358; 3000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Chicken pepper soup <span class="price">&#8358; 3000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Breakfast -->
-                            <div id="tab-5-content" class="cont">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Special Vegetable salad <span class="price">&#8358; 3500</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Russian salad <span class="price">&#8358; 4000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Cole-slaw <span class="price">&#8358; 1000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Dessert -->
-                            <div id="tab-6-content" class="cont">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="menu-info">
-                                            <h5>Boiled yam <span class="price">&#8358; 3000</span></h5>
-                                            <p>with egg sauce</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Indomie  <span class="price">&#8358; 2500</span></h5>
-                                            <p>(Omellet).</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Jollof spaghetti <span class="price">&#8358; 4000</span></h5>
-                                            <p>(Chicken)</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <div class="menu-info">
-                                            <h5>Chicken and Chips <span class="price">&#8358; 4000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                        <div class="menu-info">
-                                            <h5>Yam chips and protein<span class="price">&#8358; 4000</span></h5>
-                                            <p>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
+                    <h6>Dress Code</h6>
+                    <p>Smart casual (no shorts, hats, or sandals permitted)</p>
+                    <h6>Terrace</h6>
+                    <p>Open for drinks only</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Restaurant Menu -->
     <section id="menu" class="restaurant-menu menu section-padding bg-blck">
         <div class="container">
             <div class="row">
