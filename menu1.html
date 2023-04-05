@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+		}
+		.menu-item {
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 10px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			text-align: left;
+		}
+		.menu-item img {
+			max-width: 100%;
+			height: auto;
+			margin-right: 10px;
+			border-radius: 50%;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+			flex-shrink: 0;
+			width: 100px;
+			height: 100px;
+		}
+		.menu-item h3 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+		}
+		.menu-item p {
+			margin: 0;
+			font-size: 18px;
+			color: #666;
+		}
+		.menu-item .price {
+			font-size: 24px;
+			font-weight: bold;
+			color: #ff6600;
+			margin-top: 10px;
+		}
+		.menu-title {
+			font-size: 36px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		
+		/* Responsive Styles */
+		
+		@media only screen and (max-width: 768px) {
+			.container {
+				grid-template-columns: 1fr;
+			}
+			.menu-item {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+			.menu-item img {
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>The Coral Reef Hotel | Menu</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&amp;family=Barlow+Condensed&amp;family=Gilda+Display&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+	<nav class="navbar navbar-expand-md">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/coral-logo.png" class="logo-img" alt="coral-logo"> </a>
+                <!-- <a class="logo" href="index.html"> <h2>THE Coral <span>Reef Hotel</span></h2> </a> -->
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+            <!-- Menu -->
+        </div>
+    </nav>
+	<aside class="kenburns-section" id="kenburnsSliderContainer" data-overlay-dark="3">
+        <div class="kenburns-inner h-100">
+            <div class="v-middle caption text-center">
+                <div class="container">
+                    <div class="row h-100">
+                        <div class="col-md-12"> <span>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                            </span>
+                            <h4>Welcome to Port Harcourt</h4>
+                            <h1>The best experience away from home</h1>
+                            <div class="butn-light mt-30 mb-30"> <a href="rooms.html"><span>Rooms &amp; Suites</span></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- reservation -->
+        <div class="reservation">
+            <a href="tel:+ 234 816 282 3170">
+                <div class="icon d-flex justify-content-center align-items-center"> <i class="flaticon-call"></i> </div>
+                <div class="call"><span>+ 234 816 282 3170</span>
+                    <br>Reservation<br>
+                    <span>+ 234 905 316 7022</span>
+                </div>
+            </a>
+        </div>
+        <!-- arrow down -->
+        <div class="arrow bounce text-center">
+            <a href="#" data-scroll-nav="1" class=""> <i class="ti-arrow-down"></i> </a>
+        </div>
+    </aside>
+	<section class="about section-padding" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <span>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                        <i class="star-rating"></i>
+                    </span>
+                    <div class="section-subtitle">The Coral Reef Hotel</div>
+                    <div class="section-title">Enjoy a Luxury Experience</div>
+                    <p>"Discover unparalleled luxury and comfort at our exquisite hotel in Port Harcourt
+                         - where every moment is an unforgettable experience!".</p>
+                    <p>"Experience the epitome of sophistication and hospitality, 
+                        as our dedicated staff ensures that your every need is 
+                        catered to with meticulous attention to detail. Immerse 
+                        yourself in a world of refined elegance, with our tastefully 
+                        furnished rooms and suites that provide the perfect blend of
+                         comfort and style. Savor an exceptional culinary journey,
+                          with our expertly crafted menus that showcase the finest
+                           local and international flavors. At our hotel in Port Harcourt, 
+                           every moment is designed to exceed your expectations and leave 
+                           you with unforgettable memories. Book your stay today and discover 
+                           the true meaning of luxury hospitality!".</p>
+                    <!-- call -->
+                    <div class="reservations">
+                        <div class="icon"><span class="flaticon-call"></span></div>
+                        <div class="text">
+                            <p>Reservation</p> <a href="tel:+ 234 816 282 3170">+ 234 816 282 3170</a>
+                            <p></p> <a href="tel:+ 234 905 316 7022">+ 234 905 316 7022</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+                    <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30">
+                </div>
+                <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
+                    <img src="img/rooms/2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+	<h1 class="menu-title">Our Menu for life</h1>
+	<div class="container">
+		<div class="menu-item">
+			<div class="img-container">
+				<img src="img/slider/3.jpg" alt="Meal 1">
+			</div>
+			<div class="menu-details">
+				<h3>Meal 1</h3>
+				<p>Category 1</p>
+				<p class="price">$10.99</p>
+			</div>
+		</div>
+		<div class="menu-item">
+			<div class="img-container">
+				<img src="img/slider/3.jpg" alt="Meal 2">
+			</div>
+			<div class="menu-details">
+				<h3>Meal 2</h3>
+				<p>Category 2</p>
+				<p class="price">$12.99</p>
+			</div>
+		</div>
+	
+        <div class="menu-item">
+            <div class="img-container">
+                <img src="img/slider/3.jpg" alt="Meal 3">
+            </div>
+            <div class="menu-details">
+                <h3>Meal 3</h3>
+                <p>Category 1</p>
+                <p class="price">$8.99</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="img-container">
+                <img src="img/slider/3.jpg" alt="Meal 4">
+            </div>
+            <div class="menu-details">
+                <h3>Meal 4</h3>
+                <p>Category 2</p>
+                <p class="price">$14.99</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
